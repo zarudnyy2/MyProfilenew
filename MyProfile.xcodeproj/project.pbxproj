@@ -14,6 +14,7 @@
 		863C09A627DD0D0200A5E31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863C09A527DD0D0200A5E31C /* Assets.xcassets */; };
 		863C09A927DD0D0200A5E31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863C09A727DD0D0200A5E31C /* LaunchScreen.storyboard */; };
 		863C09B527DD112700A5E31C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863C09B427DD112700A5E31C /* WelcomeViewController.swift */; };
+		863C09B827DD476600A5E31C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863C09B727DD476600A5E31C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		863C09A827DD0D0200A5E31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		863C09AA27DD0D0200A5E31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		863C09B427DD112700A5E31C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		863C09B727DD476600A5E31C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				863C09B027DD0D2500A5E31C /* ViewControllers */,
-				863C09B227DD0D6100A5E31C /* StoryBoards */,
-				863C09B327DD0D7500A5E31C /* Resourses */,
+				863C09B627DD436700A5E31C /* Models */,
+				863C09B227DD0D6100A5E31C /* Storyboards */,
+				863C09B327DD0D7500A5E31C /* Resources */,
 				863C09B127DD0D4F00A5E31C /* App */,
 			);
 			path = MyProfile;
@@ -85,21 +88,29 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		863C09B227DD0D6100A5E31C /* StoryBoards */ = {
+		863C09B227DD0D6100A5E31C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				863C09A227DD0CFC00A5E31C /* Main.storyboard */,
 				863C09A727DD0D0200A5E31C /* LaunchScreen.storyboard */,
 			);
-			path = StoryBoards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		863C09B327DD0D7500A5E31C /* Resourses */ = {
+		863C09B327DD0D7500A5E31C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				863C09A527DD0D0200A5E31C /* Assets.xcassets */,
 			);
-			path = Resourses;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		863C09B627DD436700A5E31C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				863C09B727DD476600A5E31C /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				863C09A127DD0CFC00A5E31C /* LoginViewController.swift in Sources */,
 				863C09B527DD112700A5E31C /* WelcomeViewController.swift in Sources */,
 				863C099D27DD0CFC00A5E31C /* AppDelegate.swift in Sources */,
+				863C09B827DD476600A5E31C /* User.swift in Sources */,
 				863C099F27DD0CFC00A5E31C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
