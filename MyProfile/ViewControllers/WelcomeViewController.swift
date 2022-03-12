@@ -8,12 +8,14 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    var user = ""
+    
+    @IBOutlet var welcomeLable: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        welcomeLable.text = user
     }
-
-
 }
