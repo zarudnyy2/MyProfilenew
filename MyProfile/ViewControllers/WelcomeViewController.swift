@@ -13,7 +13,7 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet var welcomeLable: UILabel!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLable.text = user

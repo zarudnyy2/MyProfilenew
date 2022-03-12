@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet var userTF: UITextField!
     @IBOutlet var passTF: UITextField!
     
@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func login() {
         guard userTF.text == user, passTF.text == pass else {
-           showAlert(title: "ERROR", message: "Enter correct username or password", textField: passTF)
+            showAlert(title: "ERROR", message: "Enter correct username or password", textField: passTF)
             return
         }
         performSegue(withIdentifier: "openWelcomeVC", sender: nil)
@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
         }
         alert.addAction(okAction)
         present(alert, animated: true)
-        }
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -56,9 +56,9 @@ class LoginViewController: UIViewController {
         if textField == userTF {
             passTF.becomeFirstResponder()
         } else {
-          login()
+            login()
         }
         return true
-}
+    }
 }
 
