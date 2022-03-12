@@ -20,14 +20,13 @@ class LoginViewController: UIViewController {
         welcomeVC.user = username
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-    
     @IBAction func loginButtonPress() {
         guard usernameTextField.text == username, passwordTextField.text == password else {
-            showAlert(title: "ERROR", message: "Enter correct username or password", textField: passwordTextField)
+            showAlert(
+                title: "ERROR",
+                message: "Enter correct username or password",
+                textField: passwordTextField
+            )
             return
         }
         performSegue(withIdentifier: "openWelcomeVC", sender: nil)
@@ -38,10 +37,28 @@ class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
-    @IBAction func forgot(_ sender: UIButton) {
+    @IBAction func showFogotData(_ sender: UIButton) {
         sender.tag == 0
         ? showAlert(title: "👻", message: username)
         : showAlert(title: "🤐", message: password)
+    }
+}
+
+extension LoginViewController {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) {
+            _ in textField?.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -51,15 +68,6 @@ class LoginViewController: UIViewController {
             loginButtonPress()
         }
         return true
-    }
-    
-    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) {
-            _ in textField?.text = ""
-        }
-        alert.addAction(okAction)
-        present(alert, animated: true)
     }
 }
 
