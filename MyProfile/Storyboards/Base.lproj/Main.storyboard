@@ -53,7 +53,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Username?"/>
                                                 <connections>
-                                                    <action selector="forgot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2jT-ba-bDh"/>
+                                                    <action selector="showFogotData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z9b-Y1-Ac3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgD-ZH-zli">
@@ -62,7 +62,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Password?"/>
                                                 <connections>
-                                                    <action selector="forgot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQ1-U5-P59"/>
+                                                    <action selector="showFogotData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Drj-kB-Fix"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -148,7 +148,7 @@
         <!--About me-->
         <scene sceneID="SGn-yf-P1D">
             <objects>
-                <viewController id="c7P-sB-q9L" sceneMemberID="viewController">
+                <viewController id="c7P-sB-q9L" customClass="AboutMeViewController" customModule="MyProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLX-yf-LNL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,6 +174,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="aboutMeLabel" destination="cBK-rh-8kj" id="Jhw-XT-4Yy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Djd-oi-YGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,7 +185,7 @@
         <!--Foto-->
         <scene sceneID="YWg-SW-Xpp">
             <objects>
-                <viewController id="cmz-dt-wVc" sceneMemberID="viewController">
+                <viewController id="cmz-dt-wVc" customClass="FotoViewController" customModule="MyProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMk-Dv-aMg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +205,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Foto" id="JgS-yx-pzr"/>
+                    <connections>
+                        <outlet property="fotoLabel" destination="R0d-0c-YhE" id="3PU-nu-SAC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9C-KE-QFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,6 +219,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3Sp-3i-xHH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ylP-7t-PXD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

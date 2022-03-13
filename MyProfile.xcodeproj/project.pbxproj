@@ -15,6 +15,8 @@
 		863C09A927DD0D0200A5E31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863C09A727DD0D0200A5E31C /* LaunchScreen.storyboard */; };
 		863C09B527DD112700A5E31C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863C09B427DD112700A5E31C /* WelcomeViewController.swift */; };
 		863C09B827DD476600A5E31C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863C09B727DD476600A5E31C /* User.swift */; };
+		8680BDBA27DE61AB0000B5F4 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680BDB927DE61AB0000B5F4 /* AboutMeViewController.swift */; };
+		8680BDBC27DE6C890000B5F4 /* FotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8680BDBB27DE6C890000B5F4 /* FotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		863C09AA27DD0D0200A5E31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		863C09B427DD112700A5E31C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		863C09B727DD476600A5E31C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8680BDB927DE61AB0000B5F4 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		8680BDBB27DE6C890000B5F4 /* FotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			children = (
 				863C09A027DD0CFC00A5E31C /* LoginViewController.swift */,
 				863C09B427DD112700A5E31C /* WelcomeViewController.swift */,
+				8680BDB927DE61AB0000B5F4 /* AboutMeViewController.swift */,
+				8680BDBB27DE6C890000B5F4 /* FotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,9 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				863C09A127DD0CFC00A5E31C /* LoginViewController.swift in Sources */,
+				8680BDBC27DE6C890000B5F4 /* FotoViewController.swift in Sources */,
 				863C09B527DD112700A5E31C /* WelcomeViewController.swift in Sources */,
 				863C099D27DD0CFC00A5E31C /* AppDelegate.swift in Sources */,
 				863C09B827DD476600A5E31C /* User.swift in Sources */,
+				8680BDBA27DE61AB0000B5F4 /* AboutMeViewController.swift in Sources */,
 				863C099F27DD0CFC00A5E31C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
