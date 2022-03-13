@@ -236,7 +236,9 @@
         <scene sceneID="AfA-F5-Qkh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xYP-3i-WmH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About me" id="muG-hb-MSk"/>
+                    <tabBarItem key="tabBarItem" title="About me" id="muG-hb-MSk">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1gT-q2-Jns">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
